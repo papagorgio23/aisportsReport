@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # aisportsReport
 
 <!-- badges: start -->
+[![Travis build status](https://travis-ci.com/papagorgio23/aisportsReport.svg?branch=master)](https://travis-ci.com/papagorgio23/aisportsReport)
 <!-- badges: end -->
 
 The goal of aisportsReport is to create all of A.I. Sports' reporting.

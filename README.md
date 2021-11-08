@@ -4,6 +4,9 @@
 # aisportsReport
 
 <!-- badges: start -->
+
+[![Travis build
+status](https://travis-ci.com/papagorgio23/aisportsReport.svg?branch=master)](https://travis-ci.com/papagorgio23/aisportsReport)
 <!-- badges: end -->
 
 The goal of aisportsReport is to create all of A.I. Sports’ reporting.
@@ -16,8 +19,17 @@ You can install the released version of aisportsReport from
 ``` r
 # install.packages("devtools")
 devtools::install_github("papagorgio23/aisportsReport")
-#> Skipping install of 'aisportsReport' from a github remote, the SHA1 (735af64d) has not changed since last install.
-#>   Use `force = TRUE` to force installation
+#> Downloading GitHub repo papagorgio23/aisportsReport@HEAD
+#> 
+#>      checking for file ‘/private/var/folders/rd/f5l78t4x02j84hk956p6fdlw0000gn/T/RtmpqWRKan/remotesbd3129b586bc/papagorgio23-aisportsReport-f4c89a8/DESCRIPTION’ ...  ✓  checking for file ‘/private/var/folders/rd/f5l78t4x02j84hk956p6fdlw0000gn/T/RtmpqWRKan/remotesbd3129b586bc/papagorgio23-aisportsReport-f4c89a8/DESCRIPTION’
+#>   ─  preparing ‘aisportsReport’:
+#>      checking DESCRIPTION meta-information ...  ✓  checking DESCRIPTION meta-information
+#>   ─  checking for LF line-endings in source and make files and shell scripts
+#>   ─  checking for empty or unneeded directories
+#>      Omitted ‘LazyData’ from DESCRIPTION
+#>   ─  building ‘aisportsReport_0.0.0.9000.tar.gz’
+#>      
+#> 
 library(aisportsReport)
 ```
 
