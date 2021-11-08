@@ -1,0 +1,32 @@
+---
+title: "package_intro"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{package_intro}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(aisportsReport)
+```
+
+
+
+```{r best}
+# get best days betting
+knitr::kable(best_days(20))
+```
+
+
+```{r worst}
+# get worst days betting
+knitr::kable(worst_days(20))
+```
