@@ -1,0 +1,49 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# aisportsReport
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of aisportsReport is to create all of A.I. Sports' reporting.
+
+## Installation
+
+You can install the released version of aisportsReport from [GitHub](https://github.com/papagorgio23/aisportsReport) with:
+
+
+```{r install}
+# install.packages("devtools")
+devtools::install_github("papagorgio23/aisportsReport")
+library(aisportsReport)
+```
+
+
+## Example
+
+This is a basic example which shows you the top 20 best days betting and the worst 20:
+
+
+```{r best}
+# get best days betting
+knitr::kable(best_days(20))
+```
+
+
+```{r worst}
+# get worst days betting
+knitr::kable(worst_days(20))
+```
