@@ -9,7 +9,7 @@
 status](https://travis-ci.com/papagorgio23/aisportsReport.svg?branch=master)](https://travis-ci.com/papagorgio23/aisportsReport)
 <!-- badges: end -->
 
-The goal of aisportsReport is to create all of A.I. Sports’ reporting.
+The goal of *aisportsReport* is to create all of A.I. Sports’ reporting.
 
 ## Installation
 
@@ -19,9 +19,8 @@ You can install the released version of aisportsReport from
 ``` r
 # install.packages("devtools")
 devtools::install_github("papagorgio23/aisportsReport")
-#> Downloading GitHub repo papagorgio23/aisportsReport@HEAD
 #> 
-#>      checking for file ‘/private/var/folders/rd/f5l78t4x02j84hk956p6fdlw0000gn/T/RtmpqWRKan/remotesbd3129b586bc/papagorgio23-aisportsReport-f4c89a8/DESCRIPTION’ ...  ✓  checking for file ‘/private/var/folders/rd/f5l78t4x02j84hk956p6fdlw0000gn/T/RtmpqWRKan/remotesbd3129b586bc/papagorgio23-aisportsReport-f4c89a8/DESCRIPTION’
+#>      checking for file ‘/private/var/folders/rd/f5l78t4x02j84hk956p6fdlw0000gn/T/RtmpfaTqUc/remotes14d2d793c9cc2/papagorgio23-aisportsReport-8a78f3f/DESCRIPTION’ ...  ✓  checking for file ‘/private/var/folders/rd/f5l78t4x02j84hk956p6fdlw0000gn/T/RtmpfaTqUc/remotes14d2d793c9cc2/papagorgio23-aisportsReport-8a78f3f/DESCRIPTION’
 #>   ─  preparing ‘aisportsReport’:
 #>      checking DESCRIPTION meta-information ...  ✓  checking DESCRIPTION meta-information
 #>   ─  checking for LF line-endings in source and make files and shell scripts
@@ -30,7 +29,6 @@ devtools::install_github("papagorgio23/aisportsReport")
 #>   ─  building ‘aisportsReport_0.0.0.9000.tar.gz’
 #>      
 #> 
-library(aisportsReport)
 ```
 
 ## Example
@@ -39,17 +37,10 @@ This is a basic example which shows you the top 20 best days betting and
 the worst 20:
 
 ``` r
+library(aisportsReport)
+
 # get best days betting
 knitr::kable(best_days(20))
-#> ! Using an auto-discovered, cached token.
-#>   To suppress this message, modify your code or options to clearly consent to
-#>   the use of a cached token.
-#>   See gargle's "Non-interactive auth" vignette for more details:
-#>   <https://gargle.r-lib.org/articles/non-interactive-auth.html>
-#> ℹ The googlesheets4 package is using a cached token for
-#>   'Jason@aisportsfirm.com'.
-#> ✓ Reading from "A.I. Sports - Bet Results".
-#> ✓ Range 'Sheet1'.
 ```
 
 | Date       | Bets | Risks    | Payout  | ROI     |
@@ -78,8 +69,6 @@ knitr::kable(best_days(20))
 ``` r
 # get worst days betting
 knitr::kable(worst_days(20))
-#> ✓ Reading from "A.I. Sports - Bet Results".
-#> ✓ Range 'Sheet1'.
 ```
 
 | Date       | Bets | Risks   | Payout   | ROI      |

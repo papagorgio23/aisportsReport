@@ -19,17 +19,16 @@ knitr::opts_chunk$set(
 [![Travis build status](https://travis-ci.com/papagorgio23/aisportsReport.svg?branch=master)](https://travis-ci.com/papagorgio23/aisportsReport)
 <!-- badges: end -->
 
-The goal of aisportsReport is to create all of A.I. Sports' reporting.
+The goal of *aisportsReport* is to create all of A.I. Sports' reporting.
 
 ## Installation
 
 You can install the released version of aisportsReport from [GitHub](https://github.com/papagorgio23/aisportsReport) with:
 
 
-```{r install}
+```{r install, message=FALSE, warning=FALSE}
 # install.packages("devtools")
 devtools::install_github("papagorgio23/aisportsReport")
-library(aisportsReport)
 ```
 
 
@@ -38,13 +37,15 @@ library(aisportsReport)
 This is a basic example which shows you the top 20 best days betting and the worst 20:
 
 
-```{r best}
+```{r best, message=FALSE, warning=FALSE}
+library(aisportsReport)
+
 # get best days betting
 knitr::kable(best_days(20))
 ```
 
 
-```{r worst}
+```{r worst, message=FALSE, warning=FALSE}
 # get worst days betting
 knitr::kable(worst_days(20))
 ```
