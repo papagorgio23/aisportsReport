@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' bankroll_plot(prev_months = 4)
+#' bankroll_plot(prev_months = 13)
 bankroll_plot <- function(prev_months = 24, league = "ALL") {
   # Error handling
   if (!is.numeric(prev_months)) {
@@ -31,10 +31,12 @@ bankroll_plot <- function(prev_months = 24, league = "ALL") {
   if (league != "ALL") {
     final_data <- data %>%
       dplyr::filter(.data$League %in% league)
+  } else {
+    final_data <- data
   }
 
   # get daily totals
-  final_data <- data %>%
+  final_data <- final_data %>%
     dplyr::filter(.data$Date > lubridate::add_with_rollback(
       lubridate::today(), months(-prev_months))
     ) %>%
